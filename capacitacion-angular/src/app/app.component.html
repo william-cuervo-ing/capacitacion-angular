@@ -1,3 +1,15 @@
-<div class="w-100">
-  <router-outlet></router-outlet>
+<div class="main w-100">
+  <div class="left">
+    <ul>
+      <li class="menu-heading">Dashboards</li>
+      <li><a data-toggle="tab" [routerLink]="'users'"><i class="fa fa-home fa-lg"></i>Users</a></li>
+      <li><a data-toggle="tab" [routerLink]="'users/create'"><i class="fa fa-tachometer fa-lg"></i>Create User</a></li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="tab-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
+

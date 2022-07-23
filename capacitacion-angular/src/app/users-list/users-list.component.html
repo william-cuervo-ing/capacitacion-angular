@@ -1,0 +1,17 @@
+<p>Click the names to see more data.</p>
+<table>
+  <thead>
+  <tr class="table-headers">
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td> {{ user.name }} </td>
+    <td> {{ user.email }} </td>
+    <td> {{ user.password }} </td>
+  </tr>
+  </tbody>
+</table>

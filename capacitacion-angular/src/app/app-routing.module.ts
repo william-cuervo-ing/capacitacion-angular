@@ -1,9 +1,13 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {UsersComponent} from './users/users.component';
+import {UserFormComponent} from './user-form/user-form.component';
+import {UsersListComponent} from './users-list/users-list.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
-  {path: `usuarios`, component: UsersComponent},
+  {path: ``, component: HomeComponent},
+  {path: `users`, component: UsersListComponent},
+  {path: `users/create`, component: UserFormComponent},
 ];
 
 @NgModule({
